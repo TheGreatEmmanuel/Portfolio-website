@@ -1,0 +1,140 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 20px;
+}
+
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap:60px;
+    font-size: 20px;
+}
+
+.nav-connect {
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+    font-size: 22px;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    flex-direction: column;
+    transition: 0.5s;
+    margin-left: 35px;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+
+}
+
+.navbar span {
+    background: linear-gradient(270deg, #df8908 50.4%, #b415ff 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar h1 {
+    position: relative;
+    right: 120px;
+    font-size: 28px;
+    margin-left: 130px;
+    
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-menu li img {
+    display: flex;
+    margin: auto;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-mob-close {
+    display: none;
+
+}
+
+.nav-mob-open {
+    display: none;
+}
+
+@media(max-width:768px){
+    .navbar {
+        margin: 10px 2px;
+    }
+    .navbar h1 {
+        font-size: 22px; 
+         margin: 0;
+    }
+  
+    .nav-menu.open {
+        right: 0; 
+    }
+
+    .nav-connect {
+        display: none;
+    }
+
+    .nav-mob-open {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-mob-close {
+        display: block;
+        position: relative;
+        top: 20px;
+        right: 20px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+   
+    html, body {
+       
+        overflow-x: hidden; 
+    
+    }
+
+    .nav-menu li {
+        font-size: 24px;
+        padding-left: 20px;
+        flex-direction: row;
+        cursor: pointer;
+
+    }
+    .nav-menu {
+        position: fixed;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        top: 0;
+        gap: 30px;
+        background: #1f0016;
+        width: 55%;
+        max-width: 375px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s ease;
+        right: -100%;
+        padding: 50px;       
+    }
+    .navbar h1 {
+        left: 0;
+    }
+}

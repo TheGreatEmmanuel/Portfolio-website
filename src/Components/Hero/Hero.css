@@ -1,0 +1,241 @@
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+
+}
+
+.hero img {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    object-fit: fill;
+    margin-top: 100px;
+    display: block;
+
+}
+
+.hero h1 {
+    text-align: center;
+    align-self: center;
+    width: 80%;
+    font-size: 90px;
+    font-weight: 600;
+}
+
+.hero h1 span {
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.hero p {
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+
+}
+
+.hero-action {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.hero-connect {
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+    cursor: pointer;
+
+
+}
+
+.hero-resume {
+    padding: 25px 75px;
+    border-radius: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+
+}
+
+.hero-connect:hover {
+    border: 2px solid white;
+
+}
+
+.hero-resume:hover {
+    border-color: #b415ff;
+}
+
+.resume-modal-content {
+    position: relative;
+}
+
+.resume-image {
+    border-radius: 0 !important;
+    overflow: visible;
+    height: 800px !important;
+    width: 600px !important;
+    margin: 0px !important;
+
+
+}
+
+.resume-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+
+.resume-image {
+    border-radius: 0 !important;
+    overflow: visible;
+    height: 800px !important;
+    width: 600px !important;
+    margin: 0px !important;
+
+
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: transparent;
+    margin-right: 5px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+
+
+
+@media(max-width:768px) and (max-width: 1024px) {
+    .hero img {
+        border-radius: 50%;
+        height: 250px;
+        width: 260px;
+        object-fit: fill;
+        margin-top: 60px;
+        display: block;
+
+    }
+
+    .hero h1 {
+        width: 80%;
+        font-size: 30px;
+    }
+
+    .hero p {
+        width: 85%;
+        font-size: 18px !important;
+        line-height: 28px;
+        margin: 0px 0px;
+    }
+
+    .hero-action {
+        gap: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+    .hero-connect {
+        padding: 20px 18px;
+        border-radius: 40px;
+        font-size: 16px;
+        display: inline-block;
+        white-space: nowrap;
+
+    }
+
+    .hero-resume {
+        padding: 20px 35px;
+        border-radius: 40px;
+        font-size: 16px;
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 5px;
+        right: 20px;
+        background-color: transparent;
+        margin-right: 5px;
+        border: none;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .close-btn:hover {
+        color: red;
+    }
+
+    .resume-image {
+        border-radius: 0 !important;
+        overflow: visible;
+        height: 515px !important;
+        width: 380px !important;
+        margin: 0px !important;
+
+
+    }
+
+    .resume-modal-content {
+        position: relative;
+    }
+    @media(max-width: 481px) {
+        .hero img {
+          height: 180px;
+          width: 180px;
+        }
+        .hero h1 {
+          font-size: 28px;
+          width: 80%;
+        }
+        .hero p {
+          font-size: 15px;
+          width: 90%;
+        }
+        .hero-action {
+          gap: 8px;
+          font-size: 16px;
+        }
+        body > * {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+
+
+
+}
